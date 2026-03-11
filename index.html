@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vu Thi Nhu Quynh | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; background: #fffafb; color: #4a4a4a; scroll-behavior: smooth; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .text-accent { color: #ff85a2; }
+        .bg-accent { background-color: #ff85a2; }
+        .glass { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+            border-radius: 40px; 
+        }
+        .skill-container { width: 100%; background: #f0f0f0; border-radius: 100px; height: 10px; overflow: hidden; margin-top: 8px; }
+        .skill-fill { 
+            background: linear-gradient(90deg, #98ddca 0%, #ff85a2 100%); 
+            height: 100%; 
+            border-radius: 100px; 
+        }
+        .floating { animation: float 5s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        .moment-card img { border: 10px solid white; box-shadow: 0 15px 35px rgba(255, 133, 162, 0.15); transition: 0.5s; object-fit: cover; }
+        .moment-card:hover img { transform: translateY(-10px) rotate(2deg); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 px-10 py-6 flex justify-between items-center bg-white/40 backdrop-blur-md border-b border-pink-100">
+        <span class="text-3xl font-black text-accent italic tracking-tighter">Quynh.vn</span>
+        <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <a href="#intro" class="hover:text-accent transition">Introduction</a>
+            <a href="#quote" class="hover:text-accent transition">Quote</a>
+            <a href="#edu" class="hover:text-accent transition">Education</a>
+            <a href="#skills" class="hover:text-accent transition">Skills</a>
+            <a href="#exp" class="hover:text-accent transition">Experience</a>
+            <a href="#moments" class="hover:text-accent transition">Moments</a>
+        </div>
+    </nav>
+
+    <header id="intro" class="min-h-screen flex items-center justify-center px-6 pt-24">
+        <div class="max-w-6xl grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 relative z-10">
+                <h1 class="text-6xl md:text-8xl font-serif font-black text-gray-900 leading-[0.85] mb-8 uppercase">
+                    VU THI <br> <span class="text-accent">NHU QUYNH</span>
+                </h1>
+                <div class="glass p-12 mb-8 border-l-[12px] border-accent shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4 italic text-gray-800 underline decoration-pink-100 decoration-4">Introduction ✨</h3>
+                    <p class="leading-relaxed text-gray-600 font-medium text-lg mb-4">
+                        I am a sophomore student from <b>Hai Duong</b>, currently studying at <b>Foreign Trade University (FTU)</b>. 
+                    </p>
+                    <p class="leading-relaxed text-gray-600 font-medium">
+                        Combining FTU's dynamic environment with my disciplined foundation, I aim to merge logical reasoning with effective human resource leadership.
+                    </p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#contact" class="bg-accent text-white px-10 py-5 rounded-full font-bold shadow-xl hover:brightness-110 transition-all">Get in touch</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center relative">
+                
+                <img src="avtfb.jpg" class="w-80 h-80 md:w-[480px] md:h-[480px] object-cover rounded-[70px] border-[15px] border-white shadow-2xl floating relative z-10">
+                
+                <div class="absolute -top-10 -left-10 text-9xl text-pink-100 opacity-50">🌸</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="quote" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-serif font-black text-accent mb-10 italic uppercase tracking-widest">Life Philosophy</h2>
+        <div class="glass p-14 bg-pink-50/30 border-2 border-pink-100 relative">
+            <div class="absolute top-6 left-6 text-6xl opacity-20 text-accent">“</div>
+            <p class="text-3xl italic text-gray-600 leading-relaxed font-serif">
+                Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.
+            </p>
+            <p class="text-sm font-bold text-gray-400 mt-6">- Albert Schweitzer</p>
+        </div>
+    </section>
+
+    <section id="edu" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-serif font-black text-center mb-20 italic text-accent uppercase tracking-widest">Education</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass p-12 hover:shadow-2xl transition-all border-l-8 border-accent">
+                    
+                    <img src="đhngoai thuong cfaa.jpg" class="w-full h-40 object-cover rounded-3xl mb-6 shadow-sm">
+                    
+                    <h4 class="text-3xl font-bold mb-3 text-gray-800">Foreign Trade University</h4>
+                    <p class="text-pink-300 font-black text-xs mb-6 uppercase tracking-[0.3em]">2024 - Present</p>
+                    <p class="text-gray-500 font-medium italic text-lg leading-relaxed">Sophomore | Accounting & Auditing (Standard Program).</p>
+                </div>
+                <div class="glass p-12 hover:shadow-2xl transition-all border-l-8 border-green-200">
+                    
+                    <img src="cấp 3.jpg" class="w-full h-40 object-cover rounded-3xl mb-6 shadow-sm">
+                    
+                    <h4 class="text-3xl font-bold mb-3 text-gray-800">Kim Thanh High School</h4>
+                    <p class="text-green-300 font-black text-xs mb-6 uppercase tracking-[0.3em]">Alumni</p>
+                    <p class="text-gray-500 font-medium italic text-lg leading-relaxed">Where my love for Mathematics and logic began.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-serif font-bold text-gray-800 mb-14 text-center">My Skills</h2>
+            <div class="glass p-14 shadow-sm">
+                <div class="space-y-10">
+                    <div>
+                        <p class="text-sm font-black text-gray-500 uppercase tracking-widest">Teamwork & Collaboration</p>
+                        <div class="skill-container"><div class="skill-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-black text-gray-500 uppercase tracking-widest">Leadership & Management</p>
+                        <div class="skill-container"><div class="skill-fill" style="width: 88%"></div></div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-black text-gray-500 uppercase tracking-widest">Critical Thinking & Logic</p>
+                        <div class="skill-container"><div class="skill-fill" style="width: 92%"></div></div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-black text-gray-500 uppercase tracking-widest">Microsoft Office (Excel/PPT)</p>
+                        <div class="skill-container"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exp" class="py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="text-5xl font-serif font-black text-center mb-20 italic text-accent uppercase tracking-widest">Experience</h2>
+        <div class="space-y-12">
+            <div class="glass p-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-24 h-24 bg-pink-100 rounded-full flex items-center justify-center text-accent text-4xl"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <h4 class="text-3xl font-bold text-gray-800">Vice Head of HR - CFAA</h4>
+                    <p class="text-accent font-bold text-md mb-4 italic">Future Accountants & Auditors Club (11/2025 – Present)</p>
+                    <p class="text-gray-500 font-medium text-lg leading-relaxed">Leading internal HR strategies, managing club members, and maintaining professional culture.</p>
+                </div>
+            </div>
+            <div class="glass p-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center text-green-300 text-4xl"><i class="fa-solid fa-calculator"></i></div>
+                <div>
+                    <h4 class="text-3xl font-bold text-gray-800">Mathematics Tutor</h4>
+                    <p class="text-accent font-bold text-md mb-4 italic">Freelance (09/2024 – Present)</p>
+                    <p class="text-gray-500 font-medium text-lg leading-relaxed">Simplifying complex mathematical concepts and building logical foundation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 text-center glass p-10 italic text-xl text-gray-500">
+            <p>Beyond work, I love <span class="text-accent font-bold">Watching Movies</span> and exploring cinema. ❤️</p>
+        </div>
+    </section>
+
+    <section id="moments" class="py-24 px-6 bg-pink-50/20">
+        <h2 class="text-5xl font-serif font-black text-center mb-20 italic text-accent uppercase tracking-widest">Daily Moments ✨</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <div class="moment-card"><img src="quân sự 2.jpg" class="h-80 w-full rounded-[40px] mb-4"><p class="text-center italic text-sm opacity-60">"collecting memories"</p></div>
+            
+            <div class="moment-card"><img src="thuhanoi.jpg" class="h-80 w-full rounded-[40px] mb-4"><p class="text-center italic text-sm opacity-60">"just good vibes"</p></div>
+            
+            <div class="moment-card"><img src="tulip.jpg" class="h-80 w-full rounded-[40px] mb-4"><p class="text-center italic text-sm opacity-60">"weekend escape"</p></div>
+            
+            <div class="moment-card"><img src="cafeeongbak.jpg" class="h-80 w-full rounded-[40px] mb-4"><p class="text-center italic text-sm opacity-60">"laughing life"</p></div>
+            
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 text-center bg-white rounded-t-[100px] shadow-inner">
+        <h2 class="text-6xl font-serif font-black italic mb-16 text-gray-800">Let's connect.</h2>
+        <div class="flex justify-center gap-16">
+            <a href="https://www.facebook.com/nhuwquynh.vt/" target="_blank" class="text-accent text-5xl hover:scale-110 transition-all"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:nhuquynhh3110@gmail.com" class="text-accent text-5xl hover:scale-110 transition-all"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="mt-24 text-[10px] font-black uppercase tracking-[1em] opacity-30">© 2026 VU THI NHU QUYNH</p>
+    </footer>
+
+</body>
+</html>
